@@ -1,0 +1,153 @@
+.main{
+    width: 469px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.question{
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #333333;
+    margin-top: 30px;
+}
+.question:first-child{
+    margin-top: 10px;
+}
+.question::after{
+    content:"";
+    display: block;
+    width: 469px;
+    height: 3px;
+    background: linear-gradient(90deg, #00D1B8 0%, #96C93D 100%);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+label{
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4F4F4F;
+    display: inline-block;
+    margin-left: 25px;
+}
+input[type="radio"]{
+    margin-top: 20px;
+    visibility: hidden;
+
+    
+}
+.option::before{
+    visibility: visible;
+    content:"";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #BDBDBD;
+    border-radius: 50%;
+    position: relative;
+    top: -7px;
+}
+.option:hover::before{
+    border: 2px solid #96C93D;
+}
+.option:checked::before{
+    width: 27px;
+    height: 27px;
+    border: none;
+    background: linear-gradient(90deg, #00D1B8 0%, #96C93D 100%);
+
+}
+.btn{
+    width: 280px;
+    height: 60px;
+    background: #FFFFFF;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #BDBDBD;
+    border: 2px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+.btn:hover{
+    border: 2px solid #96C93D;
+    color: #96C93D;
+}
+.btn:active{
+    background: linear-gradient(90deg, #00D1B8 0%, #96C93D 100%);
+    color: white;
+    width: 282px;
+    height: 62px;
+    border: none;
+}
+h1{
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: red;
+    margin-top: 30px;
+    text-align: center;
+    visibility: hidden;
+}
+
+.select{
+    width: 150px;
+    height: 26px;
+    border: 2px solid #E0E0E0;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+}
+.select:hover{
+    border: 2px solid #96C93D;
+}
+.ok, .cancel{
+    display: none;
+    position: absolute;
+    top: 595px;
+    margin-left: 10px;
+    
+}
+.cancel-text{
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: red;
+    visibility: hidden;
+
+}
+input[type="number"]{
+    display: inline-block;
+    margin-top: -5px;
+    
+    
+    
+}
+.answer-block{
+    width: 800px;
+    height: 300px;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    margin-top: 200px;
+}   
+.answer{
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+} 
